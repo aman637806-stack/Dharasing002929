@@ -2,351 +2,625 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>HALAL WORK WITH ZORO TRADER - Official Channel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Playfair+Display:ital,wght@1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HALAL WORK WITH ZORO TRADER - Free Telegram Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1762496642551087');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1762496642551087&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1762496642551087');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1762496642551087&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
+    :root {
+      --bg-dark: #071911;
+      --bg-card: #0c261b;
+      --bg-card-hover: #103223;
+      --border-subtle: rgba(212, 175, 55, 0.22);
+      --border-green: rgba(56, 224, 123, 0.25);
+      --gold: #e5c158;
+      --gold-dark: #b88c28;
+      --green-btn: #38e07b;
+      --green-btn-hover: #2bc96a;
+      --text-main: #ffffff;
+      --text-muted: #9eb5a8;
+    }
+
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       -webkit-tap-highlight-color: transparent;
     }
 
     body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
       min-height: 100vh;
-      min-height: 100dvh;
-      background-color: #0b0416;
-      background-image: 
-        radial-gradient(circle at 50% 35%, rgba(68, 28, 122, 0.55) 0%, rgba(19, 7, 36, 0.92) 55%, #080210 100%),
-        repeating-conic-gradient(from 0deg at 50% 34%, rgba(255, 255, 255, 0.025) 0deg 8deg, transparent 8deg 20deg);
-      color: #ffffff;
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px 18px;
       overflow-x: hidden;
       position: relative;
+      line-height: 1.5;
     }
 
-    /* Subtle floating sparkles */
-    .sparkle {
-      position: absolute;
-      color: #fce588;
-      font-size: 14px;
-      opacity: 0.7;
-      animation: twinkle 2.6s infinite ease-in-out;
+    /* Subtle Islamic Geometric Pattern Background */
+    .bg-pattern {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.14;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='1'%3E%3Ccircle cx='60' cy='60' r='26'/%3E%3Cpolygon points='60,10 110,60 60,110 10,60'/%3E%3Crect x='25' y='25' width='70' height='70'/%3E%3Ccircle cx='0' cy='0' r='20'/%3E%3Ccircle cx='120' cy='0' r='20'/%3E%3Ccircle cx='0' cy='120' r='20'/%3E%3Ccircle cx='120' cy='120' r='20'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 120px 120px;
+    }
+
+    .bg-glow {
+      position: fixed;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 460px;
+      height: 460px;
+      background: radial-gradient(circle, rgba(56, 224, 123, 0.14) 0%, rgba(229, 193, 88, 0.06) 45%, transparent 70%);
+      z-index: 0;
       pointer-events: none;
     }
-    .s1 { top: 21%; right: 18%; animation-delay: 0s; }
-    .s2 { top: 39%; left: 16%; font-size: 16px; animation-delay: 0.9s; }
-    .s3 { top: 43%; right: 20%; font-size: 12px; animation-delay: 1.6s; }
 
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.25; transform: scale(0.85); }
-      50% { opacity: 0.95; transform: scale(1.2); }
+    /* Top Sticky Ticker + CTA 1 */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(5, 18, 12, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(229, 193, 88, 0.18);
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
 
+    .ticker-wrap {
+      overflow: hidden;
+      white-space: nowrap;
+      flex: 1;
+      mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      gap: 24px;
+      animation: marquee 18s linear infinite;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ticker-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: inline-block;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* CTA #1: Top Header Pill Button */
+    .top-cta-pill {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #3ee682 0%, #26c265 100%);
+      color: #04140c;
+      font-size: 11.5px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(56, 224, 123, 0.3);
+      transition: transform 0.15s ease;
+    }
+
+    .top-cta-pill:active {
+      transform: scale(0.96);
+    }
+
+    /* Main Container */
     .container {
-      width: 100%;
-      max-width: 400px;
+      position: relative;
+      z-index: 1;
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 26px 18px 36px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      z-index: 2;
     }
 
-    /* Diamond Avatar + Crown Wrapper */
+    /* Profile Avatar with Gold Ring & Verified Badge */
     .avatar-wrapper {
       position: relative;
-      width: 170px;
-      height: 170px;
-      margin-top: 28px;
-      margin-bottom: 34px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 126px;
+      height: 126px;
+      margin-bottom: 18px;
     }
 
-    .crown {
-      position: absolute;
-      top: -36px;
-      left: 50%;
-      transform: translateX(-50%) rotate(-4deg);
-      width: 58px;
-      height: 42px;
-      z-index: 5;
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.65));
-    }
-
-    .diamond-frame {
-      width: 148px;
-      height: 148px;
-      transform: rotate(45deg);
-      border-radius: 20px;
-      padding: 4px;
-      background: linear-gradient(135deg, #fff1a8 0%, #eab308 45%, #b45309 100%);
-      box-shadow: 
-        0 0 0 3px #1d0c36,
-        0 12px 30px rgba(0, 0, 0, 0.75),
-        0 0 28px rgba(234, 179, 8, 0.35);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .diamond-inner {
+    .avatar-ring {
       width: 100%;
       height: 100%;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #140826;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #f3d678 0%, #b58927 50%, #f3d678 100%);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 0 24px rgba(229, 193, 88, 0.25);
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background-color: #102b1f;
+      border: 2px solid var(--bg-dark);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 4px;
+      width: 32px;
+      height: 32px;
+      background: #17c964;
+      border: 3px solid var(--bg-dark);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 4px 12px rgba(23, 201, 100, 0.45);
     }
 
-    .diamond-inner img {
-      width: 142%;
-      height: 142%;
-      object-fit: cover;
-      transform: rotate(-45deg);
-    }
-
-    /* Stock Market Niche Pill */
-    .niche-tag {
+    /* Subtitle Tag */
+    .community-tag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: rgba(250, 204, 21, 0.12);
-      border: 1px solid rgba(250, 204, 21, 0.32);
-      color: #fde047;
+      gap: 7px;
       font-size: 11.5px;
-      font-weight: 600;
-      letter-spacing: 0.8px;
+      font-weight: 700;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 5px 13px;
-      border-radius: 999px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    /* Main Title */
+    .brand-title {
+      font-family: 'Cinzel', 'Plus Jakarta Sans', serif;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 1.24;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
       margin-bottom: 12px;
     }
 
-    .subtitle-italic {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 18px;
-      color: #e2d9f3;
-      margin-bottom: 6px;
-      letter-spacing: 0.3px;
-    }
-
-    .brand-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 29px;
-      line-height: 1.15;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      background: linear-gradient(180deg, #ffffff 15%, #fde68a 65%, #f59e0b 100%);
+    .brand-title span {
+      background: linear-gradient(90deg, #ffffff 0%, #f5dc8b 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.6));
-      margin-bottom: 14px;
     }
 
-    .market-highlights {
+    /* Trust Pill */
+    .trust-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       font-size: 13.5px;
-      color: #c4b5fd;
-      line-height: 1.45;
-      margin-bottom: 24px;
-      max-width: 330px;
+      font-weight: 500;
+      color: #d3e3da;
+      margin-bottom: 22px;
     }
 
-    /* Golden Pill CTA Button */
+    .trust-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      background: #17c964;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* 3 Info Cards Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: linear-gradient(180deg, rgba(16, 47, 34, 0.92) 0%, rgba(10, 31, 22, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 14px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .stat-value {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* Primary Telegram CTA Buttons */
     .cta-btn {
       width: 100%;
-      max-width: 345px;
-      height: 66px;
-      border: none;
-      border-radius: 18px;
-      background: linear-gradient(180deg, #fffbeb 0%, #fde047 28%, #f59e0b 100%);
-      box-shadow: 
-        0 6px 0 #92400e,
-        0 14px 28px rgba(245, 158, 11, 0.35),
-        inset 0 2px 2px rgba(255, 255, 255, 0.85);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 14px;
-      cursor: pointer;
+      gap: 11px;
+      background: linear-gradient(135deg, #3ee682 0%, #26c265 100%);
+      color: #04140c;
       text-decoration: none;
-      transition: transform 0.14s ease, box-shadow 0.14s ease;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 16px 22px;
+      border-radius: 999px;
+      box-shadow: 0 8px 26px rgba(56, 224, 123, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
       position: relative;
-      animation: pulseGlow 2.2s infinite;
+      overflow: hidden;
+    }
+
+    /* Gold-Bordered Variant for Mid-Section CTA #3 */
+    .cta-btn.gold-accent {
+      background: linear-gradient(135deg, #f3d678 0%, #cfa136 100%);
+      color: #0a1b12;
+      box-shadow: 0 8px 26px rgba(229, 193, 88, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+      margin-bottom: 18px;
+    }
+
+    .cta-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+      transform: skewX(-22deg);
+      animation: shine 3.4s infinite;
+    }
+
+    @keyframes shine {
+      0%, 65% { left: -75%; }
+      100% { left: 135%; }
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(56, 224, 123, 0.48);
+    }
+
+    .cta-btn.gold-accent:hover {
+      box-shadow: 0 12px 32px rgba(229, 193, 88, 0.48);
     }
 
     .cta-btn:active {
-      transform: translateY(4px);
-      box-shadow: 
-        0 2px 0 #92400e,
-        0 6px 14px rgba(245, 158, 11, 0.3);
+      transform: scale(0.98);
     }
 
-    @keyframes pulseGlow {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.025); }
-    }
-
-    .tg-circle {
-      width: 44px;
-      height: 44px;
+    .tg-icon-circle {
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #7c3aed, #3b0764);
-      border: 2px solid #2e1065;
+      background: #ffffff;
+      color: #179cde;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
     }
 
-    .tg-circle svg {
-      width: 22px;
-      height: 22px;
-      fill: #ffffff;
-      margin-left: -2px;
+    .cta-btn.gold-accent .tg-icon-circle {
+      background: #071911;
+      color: #f3d678;
     }
 
-    .cta-text {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 21px;
-      letter-spacing: 0.6px;
-      color: #160929;
+    /* Section Header */
+    .section-header {
+      width: 100%;
+      text-align: left;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 2.2px;
       text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 24px 0 12px;
+      padding-left: 4px;
     }
 
-    .trust-line {
-      margin-top: 16px;
-      font-size: 13px;
-      color: #a79bc2;
-      font-weight: 500;
-      letter-spacing: 0.2px;
+    /* Feature List */
+    .features-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 18px;
+    }
+
+    .feature-item {
+      width: 100%;
+      background: linear-gradient(180deg, rgba(15, 45, 32, 0.9) 0%, rgba(10, 31, 22, 0.95) 100%);
+      border: 1px solid var(--border-green);
+      border-radius: 14px;
+      padding: 15px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .feature-item:hover {
+      border-color: rgba(229, 193, 88, 0.45);
+      background: var(--bg-card-hover);
+    }
+
+    .feature-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(229, 193, 88, 0.14);
+      border: 1px solid rgba(229, 193, 88, 0.55);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-text {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #f3f8f5;
+    }
+
+    /* Footer Note & Disclaimer */
+    .free-note {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12.5px;
+      color: var(--text-muted);
     }
 
     .disclaimer {
-      margin-top: 28px;
-      font-size: 11px;
-      color: #6b5e87;
-      line-height: 1.4;
-      max-width: 320px;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      width: 100%;
+      font-size: 11.5px;
+      color: #7c9688;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
 
-  <!-- Decorative Sparkles -->
-  <span class="sparkle s1">✦</span>
-  <span class="sparkle s2">✦</span>
-  <span class="sparkle s3">✦</span>
+  <div class="bg-pattern"></div>
+  <div class="bg-glow"></div>
 
-  <div class="container">
-    
-    <!-- Crown & Diamond Avatar -->
-    <div class="avatar-wrapper">
-      <svg class="crown" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 38L9 12L23 24L32 7L41 24L55 12L60 38H4Z" fill="url(#crownGrad)" stroke="#240b44" stroke-width="3.5" stroke-linejoin="round"/>
-        <rect x="6" y="37" width="52" height="6" rx="3" fill="#d97706" stroke="#240b44" stroke-width="2.5"/>
-        <circle cx="32" cy="26" r="3.5" fill="#4c1d95"/>
-        <defs>
-          <linearGradient id="crownGrad" x1="32" y1="7" x2="32" y2="38" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#fef08a"/>
-            <stop offset="0.55" stop-color="#eab308"/>
-            <stop offset="1" stop-color="#b45309"/>
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <div class="diamond-frame">
-        <div class="diamond-inner">
-          <img src="https://i.ibb.co/fY4ngbJX/IMG-20261112-171323-482.jpg" alt="HALAL WORK WITH ZORO TRADER" />
-        </div>
+  <!-- Top Scrolling Bar + CTA #1 -->
+  <div class="top-bar">
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item"><span class="ticker-dot"></span> HALAL WORK WITH ZORO TRADER</span>
+        <span class="ticker-item"><span class="ticker-dot"></span> IMPROVED RESULTS</span>
+        <span class="ticker-item"><span class="ticker-dot"></span> FREE TELEGRAM COMMUNITY</span>
+        <span class="ticker-item"><span class="ticker-dot"></span> HALAL WORK WITH ZORO TRADER</span>
+        <span class="ticker-item"><span class="ticker-dot"></span> IMPROVED RESULTS</span>
+        <span class="ticker-item"><span class="ticker-dot"></span> FREE TELEGRAM COMMUNITY</span>
       </div>
     </div>
 
-    <!-- Stock Market Badge -->
-    <div class="niche-tag">📈 Nifty • BankNifty • Stock Market</div>
-
-    <!-- Headings -->
-    <p class="subtitle-italic">The official channel of</p>
-    <h1 class="brand-title">HALAL WORK WITH<br>ZORO TRADER</h1>
-    <p class="market-highlights">Daily Market Analysis, Chart Setups &amp; Educational Trading Updates</p>
-
-    <!-- Primary CTA Button -->
-    <a href="https://t.me/+VGQ447AT-k4xY2Q1" id="joinBtn" class="cta-btn">
-      <span class="tg-circle">
-        <svg viewBox="0 0 24 24">
-          <path d="M21.9 3.6c-.3-.3-.8-.4-1.3-.2L2.5 10.6c-.5.2-.9.7-.8 1.2.1.5.5.9 1 1.1l4.6 1.4 1.8 5.6c.1.4.5.7.9.8h.2c.4 0 .7-.2.9-.5l2.6-3.3 4.8 3.5c.3.2.6.3.9.3.2 0 .4 0 .6-.1.4-.2.7-.6.8-1L22.3 4.9c.1-.5-.1-1-.4-1.3zM9.4 14.1l8.6-7.6-6.9 8.8-.3 3.2-1.4-4.4z"/>
-        </svg>
-      </span>
-      <span class="cta-text" id="btnLabel">JOIN NOW</span>
+    <!-- OPTION 1: Top Header Join Button -->
+    <a href="https://t.me/+VGQ447AT-k4xY2Q1" target="_blank" rel="noopener noreferrer" class="top-cta-pill tg-cta" data-cta="top_header">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+      </svg>
+      <span>Join Telegram</span>
     </a>
-
-    <!-- Micro Trust Copy -->
-    <p class="trust-line">Free · opens in Telegram · leave anytime</p>
-
-    <!-- Educational Disclaimer -->
-    <p class="disclaimer">For educational &amp; market learning purposes only. We are not SEBI registered advisors.</p>
-
   </div>
 
+  <main class="container">
+    <!-- Profile Photo -->
+    <div class="avatar-wrapper">
+      <div class="avatar-ring">
+        <img
+          src="https://i.ibb.co/R4dfxLMj/IMG-20261125-013048-553.jpg"
+          alt="HALAL WORK WITH ZORO TRADER"
+          class="avatar-img"
+        />
+      </div>
+      <div class="verified-badge" title="Verified Community">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#04140c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Subtitle -->
+    <div class="community-tag">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+      </svg>
+      <span>FREE TELEGRAM COMMUNITY</span>
+    </div>
+
+    <!-- Brand Name -->
+    <h1 class="brand-title"><span>HALAL WORK WITH ZORO TRADER</span></h1>
+
+    <!-- Trust Line -->
+    <div class="trust-row">
+      <span class="trust-check">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#04140c" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </span>
+      <span>Trusted by thousands of learners</span>
+    </div>
+
+    <!-- 3 Feature Cards -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Live updates</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">Free</div>
+        <div class="stat-label">Always to join</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">Open</div>
+        <div class="stat-label">Leave anytime</div>
+      </div>
+    </div>
+
+    <!-- OPTION 2: Main Hero Join Button -->
+    <a href="https://t.me/+VGQ447AT-k4xY2Q1" target="_blank" rel="noopener noreferrer" class="cta-btn tg-cta" data-cta="hero_primary">
+      <span class="tg-icon-circle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+        </svg>
+      </span>
+      <span>Join on Telegram</span>
+    </a>
+
+    <!-- What You Get Section -->
+    <div class="section-header">WHAT YOU GET</div>
+
+    <div class="features-list">
+      <div class="feature-item">
+        <span class="feature-check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="feature-text">Halal Market Insights &amp; Discussions</span>
+      </div>
+
+      <div class="feature-item">
+        <span class="feature-check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="feature-text">Learn Directly with Zoro Trader</span>
+      </div>
+
+      <div class="feature-item">
+        <span class="feature-check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="feature-text">Practical &amp; Ethical Strategies</span>
+      </div>
+    </div>
+
+    <!-- OPTION 3: Mid-Section Gold Join Button -->
+    <a href="https://t.me/+VGQ447AT-k4xY2Q1" target="_blank" rel="noopener noreferrer" class="cta-btn gold-accent tg-cta" data-cta="mid_gold">
+      <span class="tg-icon-circle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+        </svg>
+      </span>
+      <span>Join on Telegram</span>
+    </a>
+
+    <!-- OPTION 4: Bottom Primary Join Button -->
+    <a href="https://t.me/+VGQ447AT-k4xY2Q1" target="_blank" rel="noopener noreferrer" class="cta-btn tg-cta" data-cta="bottom_primary">
+      <span class="tg-icon-circle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+        </svg>
+      </span>
+      <span>Join on Telegram</span>
+    </a>
+
+    <div class="free-note">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38e07b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      <span>Free to join &bull; Leave anytime</span>
+    </div>
+
+    <footer class="disclaimer">
+      For educational and informational purposes only.
+    </footer>
+  </main>
+
   <script>
-    const joinBtn = document.getElementById('joinBtn');
-    const btnLabel = document.getElementById('btnLabel');
-    const telegramUrl = "https://t.me/+VGQ447AT-k4xY2Q1";
-
-    joinBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      
-      // Change button text just like the reference screenshot
-      btnLabel.textContent = "LET'S GO!";
-      joinBtn.style.animation = "none";
-
-      // Fire Meta Pixel Lead/Subscribe event if active
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead');
-        fbq('track', 'Subscribe');
-      }
-
-      // Redirect to Telegram after short visual feedback
-      setTimeout(function () {
-        window.location.href = telegramUrl;
-      }, 280);
+    // Track clicks across all 4 Telegram buttons via Meta Pixel
+    document.querySelectorAll('.tg-cta').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', {
+            content_name: 'HALAL WORK WITH ZORO TRADER',
+            button_location: btn.dataset.cta || 'telegram_cta'
+          });
+        }
+      });
     });
   </script>
-
 </body>
 </html>
